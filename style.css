@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+html{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    color: whitesmoke;
+    grid-template-columns: 1fr 7fr ;
+    grid-template-rows: 1fr 6fr;
+}
+
+
+
+
+
+
+
+/*side bar section */
+
+.side_bar{
+    background-color: darkgoldenrod;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 12fr;
+
+}
+
+.side_bar > ul {
+
+    display: grid;
+    grid-template-rows: repeat(20  ,1fr);
+    gap: 1rem;
+}
+
+.side_bar > ul > li{
+    list-style: none;
+    border: 1px solid black;
+}
+
+
+
+
+
+/*header section */
+
+header{
+    background-color: darkred;
+    grid-column: 2;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header > *{
+    border: 1px solid black;
+}
+
+
+
+
+
+/*main section */
+
+
+main{
+    background-color: darkred;
+    grid-column: 2;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+main >*{
+    border: 1px solid black;
+}
+
+.projects{
+    background-color: darkgreen;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects > * ,.projects2 >*{
+    border: 1px solid black;
+}
+
+.projects2{
+    background-color: darkslateblue;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
