@@ -24,35 +24,70 @@ body{
 
 /*side bar section */
 
+
+
+ion-icon {
+    font-size: 3rem;
+}
+
+
+img{
+    filter: invert(87%) sepia(100%) saturate(2%) hue-rotate(259deg) brightness(109%) contrast(97%);
+}
+
+
 .side_bar{
-    background-color: darkgoldenrod;
+
+    background-color: #292524;
     grid-column: 1;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 1fr 12fr;
+    grid-template-rows: 1fr 9fr;
 
 }
 
 .side_bar > ul {
 
     display: grid;
-    grid-template-rows: repeat(20  ,1fr);
+    grid-template-rows: repeat(9  ,1fr);
     gap: 1rem;
 }
 
 .side_bar > ul > li{
     list-style: none;
     border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.side_bar > ul > li > a {
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
 }
 
 
-
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: block;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
 
 
 /*header section */
 
 header{
-    background-color: darkred;
+    background-color: darkgreen;
     grid-column: 2;
     grid-row: 1;
 
@@ -72,7 +107,7 @@ header > *{
 
 
 main{
-    background-color: darkred;
+    background-color: ghostwhite;
     grid-column: 2;
     grid-row: 2;
 
@@ -86,18 +121,68 @@ main >*{
 }
 
 .projects{
-    background-color: darkgreen;
     grid-column: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 2fr 2fr 2fr;
+    gap:2rem;
+    padding:2rem;
 }
 
-.projects > * ,.projects2 >*{
-    border: 1px solid black;
+.projects > h1{
+    color: #9ca3af;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    font-size: 1.5rem;
+
 }
+
+
+.projects > div ,.projects2 >div{
+    border: 1px solid black;
+    background-color:  #4b5563;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.7rem;
+    border-left: 0.3rem solid orange;
+}
+
+
 
 .projects2{
-    background-color: darkslateblue;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.1fr 4fr 0.1fr 3fr;
+    gap:1rem;
+    padding:2rem;
+}
+
+.projects2 > h1{
+    color: #9ca3af;
+
+    font-size: 1.5rem;
+
+}
+
+#announcements{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+#announcements > div{
+    border-bottom: 1px solid white;
+
+}
+
+#trending {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+#trending > div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
 }

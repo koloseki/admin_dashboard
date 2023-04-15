@@ -7,22 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-    <div class="side_bar">
-        Logo
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<div class="side_bar">
 
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Profile</a></li>
-            <li><a href="">Messages</a></li>
-            <li><a href="">History</a></li>
-            <li><a href="">Tasks</a></li>
+            <li><ion-icon name="terminal-outline"></ion-icon><h2>Panel</h2></li>
+
+            <li><a href=""> <img src="img/icons/home.svg" alt="Home Icon"> Home</a></li>
+            <li><a href=""> <img src="img/icons/user.svg" alt="Profile Icon"> Profile</a></li>
+            <li><a href=""> <img src="img/icons/message-square.svg" alt="Message Icon"> Messages</a></li>
+            <li><a href=""> <img src="img/icons/clock.svg" alt="History Icon"> History</a></li>
+            <li><a href=""><img src="img/icons/file.svg" alt="Task Icon"> Tasks</a></li>
             <li>                    </li>
-            <li><a href="">Settings</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Privacy</a></li>
+            <li><a href=""><img src="img/icons/settings.svg" alt="Settings Icon"> Settings</a></li>
+            <li><a href=""><img src="img/icons/help-circle.svg" alt="Support Icon"> Support</a></li>
+            <li><a href=""><img src="img/icons/shield.svg" alt="Privacy Icon"> Privacy</a></li>
         </ul>
 
     </div>
@@ -36,17 +40,69 @@
 
     <main>
         <div class="projects">
-            <div class="project">Project 1</div>
-            <div class="project">Project 2</div>
-            <div class="project">Project 3</div>
-            <div class="project">Project 4</div>
-            <div class="project">Project 5</div>
-            <div class="project">Project 6</div>
+            <h1>Your projects</h1>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex. Integer nec mi ullamcorper, dictum sapien nec, convallis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tempor lacus. Pellentesque posuere, mauris quis sodales varius, mauris libero molestie diam, id sodales orci metus ut dui. Nunc ac est dui.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex. Integer nec mi ullamcorper, dictum sapien nec, convallis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tempor lacus. Pellentesque posuere, mauris quis sodales varius, mauris libero molestie diam, id sodales orci metus ut dui. Nunc ac est dui.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex. Integer nec mi ullamcorper, dictum sapien nec, convallis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tempor lacus. Pellentesque posuere, mauris quis sodales varius, mauris libero molestie diam, id sodales orci metus ut dui. Nunc ac est dui.</p>
+
+            </div>
+            <div class="project">
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex. Integer nec mi ullamcorper, dictum sapien nec, convallis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tempor lacus. Pellentesque posuere, mauris quis sodales varius, mauris libero molestie diam, id sodales orci metus ut dui. Nunc ac est dui.</p>
+
+            </div>
+            <div class="project">
+                <h3>Project 5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex. Integer nec mi ullamcorper, dictum sapien nec, convallis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tempor lacus. Pellentesque posuere, mauris quis sodales varius, mauris libero molestie diam, id sodales orci metus ut dui. Nunc ac est dui.</p>
+
+            </div>
+            <div class="project">
+                <h3>Project 6</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex. Integer nec mi ullamcorper, dictum sapien nec, convallis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tempor lacus. Pellentesque posuere, mauris quis sodales varius, mauris libero molestie diam, id sodales orci metus ut dui. Nunc ac est dui.</p>
+
+            </div>
         </div>
 
         <div class="projects2">
-            <div class="project">Announcements</div>
-            <div class="project">Trending</div>
+            <h1>Announcements</h1>
+            <div class="project" id="announcements">
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex...</p>
+                </div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex...</p>
+                </div>
+                <div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac elit pellentesque, pharetra nibh id, euismod ex...</p>
+                </div>
+            </div>
+
+            <h1>Trending</h1>
+            <div class="project" id="trending">
+                <div>
+                    <img src="img/lofi.jpg" alt="" width="64px"><h3>Lorem Ipsum</h3>
+                </div>
+                <div>
+                    <img src="img/icons/shield.svg" alt=""><h3>Lorem Ipsum</h3>
+                </div>
+                <div>
+                    <img src="img/icons/shield.svg" alt=""><h3>Lorem Ipsum</h3>
+                </div>
+                <div>
+                    <img src="img/icons/shield.svg" alt=""><h3>Lorem Ipsum</h3>
+                </div>
+            </div>
         </div>
     </main>
 
