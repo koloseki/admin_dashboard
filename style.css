@@ -11,13 +11,17 @@ body{
     display: grid;
     height: 100vh;
     margin: 0;
-    color: whitesmoke;
+    color: black;
     grid-template-columns: 1fr 7fr ;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 0.01fr 8fr;
 }
 
 
-
+.round_image{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
 
 
 
@@ -31,25 +35,26 @@ ion-icon {
 }
 
 
-img{
+.side_image{
     filter: invert(87%) sepia(100%) saturate(2%) hue-rotate(259deg) brightness(109%) contrast(97%);
 }
 
 
 .side_bar{
-
-    background-color: #292524;
+    color: white;
+    background-color: #0284c7;
     grid-column: 1;
-    grid-row: 1 / 3;
+    grid-row: 1 / -1;
     display: grid;
-    grid-template-rows: 1fr 9fr;
+    margin-left: -1rem;
+
 
 }
 
 .side_bar > ul {
 
     display: grid;
-    grid-template-rows: repeat(9  ,1fr);
+    grid-template-rows: repeat(10  ,1fr);
     gap: 1rem;
 }
 
@@ -59,7 +64,7 @@ img{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
+
 
 }
 
@@ -67,8 +72,8 @@ img{
     border: 1px solid red;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
+
+
 
 }
 
@@ -76,8 +81,9 @@ img{
 a{
     text-decoration: none;
     color: whitesmoke;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1rem;
+    gap: 0.5rem;
     display: block;
     border-radius: 0.5rem;
     transition: all 0.3s ease-in-out;
@@ -87,27 +93,85 @@ a{
 /*header section */
 
 header{
-    background-color: darkgreen;
+    background-color: white;
     grid-column: 2;
     grid-row: 1;
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 5fr 6fr;
 }
 
 header > *{
     border: 1px solid black;
 }
 
+.upp_header > textarea{
+    resize: none;
+    outline: none;
+    height: 2rem;
+    overflow: auto;
+    font-size: 1.5rem;
+    align-content: center;
+    padding-left: 1rem  ;
+    border-radius: 3rem;
+}
+.upp_header >*{
+    border: 1px solid black;
+}
 
+.upp_header > #bell{
+    grid-column: 4;
+}
 
+.upp_header{
+    display: grid;
+    grid-template-columns: 0.1fr 3fr 5fr 0.1fr 0.1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 5rem;
+
+}
+
+.low_header{
+    display:grid;
+    grid-template-columns: 0.1fr 3fr 5fr 0.5fr 0.5fr 0.5fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 1rem;
+
+}
+
+.low_header >*{
+    border: 1px solid black;
+}
+
+.low_header > button {
+    border: none;
+    background-color:  #0284c7;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.low_header > :hover {
+    cursor: pointer;
+}
+.low_header > :active {
+    border: 1px solid orange;
+}
+
+#new_Button{
+    grid-column:4;
+}
 
 
 /*main section */
 
 
 main{
-    background-color: ghostwhite;
+    background-color: #e5e7eb   ;
     grid-column: 2;
     grid-row: 2;
 
@@ -130,21 +194,22 @@ main >*{
 }
 
 .projects > h1{
-    color: #9ca3af;
+
     grid-column: 1 / 3;
     grid-row: 1;
     font-size: 1.5rem;
+    margin-bottom: 0;
 
 }
 
 
 .projects > div ,.projects2 >div{
-    border: 1px solid black;
-    background-color:  #4b5563;
+    border-left: 0.3rem solid black;
+    color: black;
+    background-color:  white;
     padding: 1rem;
     font-size: 0.9rem;
     border-radius: 0.7rem;
-    border-left: 0.3rem solid orange;
 }
 
 
@@ -152,13 +217,10 @@ main >*{
 .projects2{
     display: grid;
     grid-template-rows: 0.1fr 4fr 0.1fr 3fr;
-    gap:1rem;
-    padding:2rem;
+    padding:1rem;
 }
 
 .projects2 > h1{
-    color: #9ca3af;
-
     font-size: 1.5rem;
 
 }
@@ -166,19 +228,18 @@ main >*{
 #announcements{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
+
+    padding: 1rem;
 }
 #announcements > div{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 
 }
 
 #trending {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 #trending > div{
     display: flex;
